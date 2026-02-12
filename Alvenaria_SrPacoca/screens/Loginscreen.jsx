@@ -5,17 +5,8 @@ export default function App() {
   return (
     <View style={styles.container}>
     
-      <Text>calmaaaa</Text>
+      <Text style={{ color: 'red', fontSize: '20px' }}>bem vindo</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
