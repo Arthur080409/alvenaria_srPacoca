@@ -8,7 +8,13 @@ export default function login() {
   const [user, setUser] = useState ("");
 
   const style = StyleSheet.create({
+/*
+font style
+widht
+height
+alignitens
 
+*/
 
     
   })
