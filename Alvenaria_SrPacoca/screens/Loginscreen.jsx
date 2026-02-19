@@ -2,19 +2,24 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import {useState} from 'react';
 export default function login() {
+
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [user, setUser] = useState ("");
 
 if (!email || !senha || !user){
+
   alert("necessario preencher as lacunas.")
   return;}
+
   console.log("usuario:", user);
     console.log("email:", email);
     console.log("senha:", senha);
   }
   return (
+
     <View style={styles.container}>
+
       <TextInput
             placeholderr="digite seu nickname"
             value={user}
