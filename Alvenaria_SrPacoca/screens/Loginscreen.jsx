@@ -7,6 +7,12 @@ export default function login() {
   const [senha, setSenha] = useState("");
   const [user, setUser] = useState ("");
 
+  const style = StyleSheet.create({
+
+
+    
+  })
+
 if (!email || !senha || !user){
 
   alert("necessario preencher as lacunas.")
