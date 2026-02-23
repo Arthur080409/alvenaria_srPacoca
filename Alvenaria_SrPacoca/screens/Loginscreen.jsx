@@ -13,8 +13,10 @@ font style
 widht
 height
 alignitens
-
-
+ fetch docs 
+ axios docs 
+ async storage react-nactive docs
+ api = pokeapi; tmdb; jsonplceholder; faeStorage. 
 teste teste
 */
 
