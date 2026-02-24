@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import {useState} from 'react';
+import LinearGradient from 'react-native-linear-gradient'
 export default function login() {
 
   const [email, setEmail] = useState("");
@@ -8,25 +9,30 @@ export default function login() {
   const [user, setUser] = useState ("");
 
   const style = StyleSheet.create({
+    container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 /*
 font style
 widht
 height
 alignitens
  fetch docs 
- axios docs 
+ /*axios docs 
  async storage react-nactive docs
  api = pokeapi; tmdb; jsonplceholder; faeStorage. 
 teste teste
 */
 
-    
-  })
 
-if (!email || !senha || !user){
+/*if (!email || !senha || !user){
 
   alert("necessario preencher as lacunas.")
-  return;}
+  return;}*/
 
   console.log("usuario:", user);
     console.log("email:", email);
@@ -36,7 +42,7 @@ if (!email || !senha || !user){
 
     <View style={styles.container}>
 
-      <TextInput
+      <TextInput 
             placeholderr="digite seu nickname"
             value={user}
             onChangeText={(e) => setUser(e.target.value)}
@@ -55,7 +61,7 @@ if (!email || !senha || !user){
             onChangeText={(e) => setSenha(e.target.value)}
             style={styles.input}
           />
-            <Button type="" style={styles.button}>
+            <Button title="submit" style={styles.button}>
             Entrar
           </Button>
           </View>
