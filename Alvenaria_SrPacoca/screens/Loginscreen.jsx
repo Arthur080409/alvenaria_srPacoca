@@ -58,6 +58,7 @@ teste teste
             style={styles.input}
             value={email}
             onChangeText={(novoTexto) => setEmail(novoTexto)}
+          
             />
             <TextInput
             type="password"
@@ -67,6 +68,7 @@ teste teste
             style={styles.input}
             value={senha}
             onChangeText={(novoTexto) => setSenha(novoTexto)}
+            secureTextEntry={true}
             />
       
 
