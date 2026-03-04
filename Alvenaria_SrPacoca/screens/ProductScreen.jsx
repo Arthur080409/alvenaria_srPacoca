@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { Image } from 'react-native';
 
 export default function ProductScreen({ route }) {
   const produto = route && route.params && route.params.produto;
@@ -16,10 +17,17 @@ export default function ProductScreen({ route }) {
     <View style={styles.container}>
       <Text style={styles.nome}>{produto.nome}</Text>
       <Text style={styles.preco}>{produto.preco}</Text>
-      <Text>Produto de alta qualidade para construção.</Text>
+      <Text >Produto de alta qualidade para construção.</Text>
+      <Text>Realize seu pagamento aqui</Text>
+      <Image source={require('../IMG/A_Minha_Galeria.png')} style={{ width: 200, height: 200 }}/>
     </View>
+    
+    
+  
   );
+  
 }
+
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 20 },
